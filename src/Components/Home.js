@@ -10,7 +10,7 @@ const Home = () => {
 
   const intoTitleCase = () => {
     var textBuffer = text.split(" ");
-    if (textBuffer[textBuffer.length - 1] == [""] || textBuffer[textBuffer.length - 1] == undefined) {
+    if (textBuffer[textBuffer.length - 1] === [""] || textBuffer[textBuffer.length - 1] === undefined) {
       textBuffer.pop();
     }
 
@@ -22,7 +22,7 @@ const Home = () => {
   }
   function textCount() {
     //  console.log(text[text.length - 1] == undefined)
-    if (text[text.length - 1] == [" "] || text[text.length - 1] == undefined) {
+    if (text[text.length - 1] === [" "] || text[text.length - 1] === undefined) {
 
       return (text.split(" ").length - 1)
     }

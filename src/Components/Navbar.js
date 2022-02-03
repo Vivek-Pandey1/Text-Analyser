@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {Overlay,Button,Tooltip,OverlayTrigger} from 'react-bootstrap';
+import {Button,Tooltip,OverlayTrigger} from 'react-bootstrap';
 
 const Navbar = (props) => {
   const [theemMode, setTheemMode] = useState("Enable dark mode");
@@ -9,12 +9,12 @@ const Navbar = (props) => {
     var textInput = document.getElementById("myText");
     element.classList.toggle("dark");
     textInput.classList.toggle("dark");
-    if (theemMode == "Enable dark mode") {
+    if (theemMode === "Enable dark mode") {
       setTheemMode("Enable light mode");
-      var navbarmode = "dark";
-    } else if (theemMode == "Enable light mode") {
+       props.navbarmode = "dark";
+    } else if (theemMode === "Enable light mode") {
       setTheemMode("Enable dark mode");
-      var navbarmode = "light";
+      props.navbarmode = "light";
     }
   };
   /////////
@@ -34,7 +34,7 @@ const Navbar = (props) => {
     >
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src="./logo.svg" />
+          <img src="./logo.svg" alt="logo" />
         </Link>
 
         <Link className="nav-link nav-item" to="/">
