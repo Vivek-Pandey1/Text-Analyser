@@ -7,14 +7,19 @@ main {
   font-size: 2rem;
  
 }
-
+textarea{
+  background-color: rgb(183, 202, 228) !important;
+}
+body{
+  background-color: rgb(217, 233, 255) !important;
+}
 .dark {
-  background-color: #222 !important;
-  color: #e6e6e6 !important;
+  background-color: rgb(40, 41, 58) !important;
+  color: #f5f5f5 !important;
 }
 .light {
-  background-color: #e6e6e6 !important;
-  color: #222 !important;
+  background-color: #d6d5d5 !important;
+  color: rgb(24, 24, 24) !important;
 }
 
 .navbar > .container-fluid {

@@ -33,7 +33,7 @@ const Home = () => {
 
       <div className="form">
         <textarea
-          className={`form-control {}`}
+          className="form-control"
           name="text"
           id="myText"
           value={text}
