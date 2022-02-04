@@ -13,6 +13,7 @@ Analyzing your text helps you calculate the character count and the time require
     5. Copy text
     6. Clear text
     7. Dark mode
+    8. Not found page
 
 ##  Tech Stack Used
     1. HTML
