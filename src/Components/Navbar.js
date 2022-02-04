@@ -36,25 +36,26 @@ const Navbar = () => {
         <Link className="nav-link nav-item" to="/about">
           About
         </Link>
-       
-      </div>
-      <OverlayTrigger
-        placement="bottom"
+        <OverlayTrigger placement="bottom"
         delay={{ show: 250, hide: 400 }}
         overlay={renderTooltip}
       >
         <Button variant="checkbox" onClick={mode}>
-          <div className="form-check form-switch ">
+          <div className="form-check form-switch ms-3">
             <input
               className="form-check-input btn-lg"
               type="checkbox"
               role="switch"
-              id="flexSwitchCheckDefault"
-            />
+              id="flexSwitchCheckDefault" />
+               
           </div>
+           
         </Button>
+        
       </OverlayTrigger>
-     
+      </div>
+      
+
     </nav>
   );
 };
