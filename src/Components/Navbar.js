@@ -25,37 +25,38 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid ">
-        <Link className="navbar-brand" to="/">
+      <div className="container-fluid d-flex justify-content-between ">
+        <div>
+        <Link className="navbar-brand d-inline" to="/">
           <img src="./logo.svg" alt="logo" />
         </Link>
 
-        <Link className="nav-link nav-item" to="/">
+        <Link className="nav-link nav-item d-inline" to="/">
           Home
         </Link>
-        <Link className="nav-link nav-item" to="/about">
+        <Link className="nav-link nav-item d-inline" to="/about ">
           About
         </Link>
-        <OverlayTrigger placement="bottom"
-        delay={{ show: 250, hide: 400 }}
-        overlay={renderTooltip}
-      >
+        </div>
+        <div className="d-flex justify-content-start">
+          <OverlayTrigger placement="bottom" 
+          delay={{ show: 250, hide: 400 }}
+          overlay={renderTooltip}
+        >
         <Button variant="checkbox" onClick={mode}>
-          <div className="form-check form-switch ms-3">
+          <div className="form-check form-switch">
             <input
-              className="form-check-input btn-lg"
+              className="form-check-input btn-lg m-0"
               type="checkbox"
               role="switch"
               id="flexSwitchCheckDefault" />
-               
-          </div>
-           
-        </Button>
-        
-      </OverlayTrigger>
+                </div>
+              </Button>
+            </OverlayTrigger>
+            <span id="myText" className="m-0 pt-1">{theemMode}</span>
       </div>
       
-
+      </div>
     </nav>
   );
 };

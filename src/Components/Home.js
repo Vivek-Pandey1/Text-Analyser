@@ -28,7 +28,7 @@ const Home = () => {
   
 
   return (
-    <div className="container">
+    <div className="container mt-2">
       <h1>Enter your text to analyze</h1>
 
       <div className="form">
